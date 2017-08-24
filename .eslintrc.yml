@@ -3,3 +3,8 @@ rules:
   no-param-reassign:
     - error
     - { props: false }
+  semi:
+    - error
+    - never
+  no-console:
+    - off
