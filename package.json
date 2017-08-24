@@ -15,9 +15,9 @@
     "shx": "^0.2.2"
   },
   "scripts": {
-    "build:js": "browserify ./src/app.js -o ./assets/app.js -t [ babelify ]",
+    "build:js": "browserify ./src/client.js -o ./assets/index.js -t [ babelify ]",
     "clean": "shx rm -rf ./assets && shx mkdir ./assets",
-    "serve": "babel-node ./server.js",
+    "serve": "babel-node ./src/server.js",
     "start": "npm run clean && npm run build:js && npm run serve"
   }
 }
