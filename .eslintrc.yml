@@ -1,4 +1,7 @@
-extends: airbnb-base
+extends: airbnb
+env:
+  browser: true
+  node: true
 rules:
   no-param-reassign:
     - error
@@ -6,5 +9,7 @@ rules:
   semi:
     - error
     - never
-  no-console:
-    - off
+  no-console: off
+  react/jsx-filename-extension: off
+  react/prop-types: off
+  jsx-a11y/href-no-hash: off
